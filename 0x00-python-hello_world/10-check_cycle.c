@@ -16,7 +16,7 @@ int check_cycle(listint_t *list)
 		return (0);
 
 	tortle = list->next;
-	hare = list->next->next;
+	haire = list->next->next;
 
 	while (tortle && haire && haire->next)
 	{
