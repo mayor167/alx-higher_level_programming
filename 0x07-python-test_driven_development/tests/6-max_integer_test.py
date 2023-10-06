@@ -4,7 +4,7 @@
 
 def max_integer(list=[]):
     """find and return the max integer in a list of integers
-        when the list is empty, the function returns None
+       when the list is empty, the function returns None
     """
     if len(list) == 0:
         return None
