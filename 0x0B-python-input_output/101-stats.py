@@ -11,9 +11,9 @@ iterat = 0
 def print_stats():
     """Function that prints resume of stats."""
     print("File size: {}".format(total_sz))
-    for l, m in sorted(codes.items()):
+    for list_items, m in sorted(codes.items()):
         if m is not 0:
-            print("{}: {}".format(l, m))
+            print("{}: {}".format(list_items, m))
 
 
 try:
@@ -28,7 +28,7 @@ try:
                 total_sz += int(line[-1])
                 if temp == iterat:
                     iterat += 1
-            except:
+            except ValueError:
                 if temp == iterat:
                     continue
 
@@ -39,4 +39,3 @@ try:
 
 except KeyboardInterrupt:
     print_stats()
-
