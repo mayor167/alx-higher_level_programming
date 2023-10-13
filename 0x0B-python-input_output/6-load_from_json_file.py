@@ -8,4 +8,3 @@ def load_from_json_file(filename):
     with open(filename, 'r') as myFile:
         read_line = json.load(myFile)
         return read_line
-
