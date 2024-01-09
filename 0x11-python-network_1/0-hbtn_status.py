@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Fetches https://intranet.hbtn.io/status."""
 import urllib.request
 
